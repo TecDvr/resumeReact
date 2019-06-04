@@ -20,15 +20,18 @@
 
     <script type="text/babel">
         ReactDOM.render(
-            <App />,
+            <App 
+                className = 'resumeTitle'
+                sallyName = 'TJ'
+             />,
             document.querySelector('#application-base')
         );
-        
-        function App() {
+
+        function App(props) {
             return ( 
                 <div>
                     <header>
-                        <h1>Sally Student Resume</h1>
+                        <h1 className={props.className}>{props.sallyName} Student Resume</h1>
                         <nav>
                             <ul>
                                 <li>Contact</li>
@@ -38,12 +41,12 @@
                         </nav>
                     </header>
                     <main>
-                        <section>
+                        <section className='contact'>
                             <h2>Contact</h2>
                             <address>
                                 <p>Name: Sally</p>
-                                <p>Email:</p>
-                                <p>Phone Number:</p>
+                                <p>Email: <a href="mailto:sally@gmail.com?subject=Job%20Offer">sally@gmail.com</a></p>
+                                <p>Phone Number: <a href="tel:+206-465-3574">206.465.3574</a></p>
                             </address>
                         </section>
                         <section>
@@ -74,26 +77,12 @@
                                             <li>Dongle expert</li>
                                         </ul>    
                                 </ul>
-
                         </section>
-
-                        
-
-
-
                     </main>
+                    <footer> © 2019 - Please don't steal my info, it's copywrited</footer> 
                 </div> 
             );
         };
-
-        
-
-
-
-
-
-
     </script>
-
     </body>
 </html>
