@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resumeReact</title>
+</head>
+    <body>
+
+        <div id="application-base"></div>
+    
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+        ReactDOM.render(
+            <App />,
+            document.querySelector('#application-base')
+        );
+        
+        function App() {
+            return ( 
+                <div>
+                    <header>
+                        <h1>Sally Student Resume</h1>
+                        <nav>
+                            <ul>
+                                <li>Contact</li>
+                                <li>Education</li>
+                                <li>Employment</li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <main>
+                        <section>
+                            <h2>Contact</h2>
+                            <address>
+                                <p>Name: Sally</p>
+                                <p>Email:</p>
+                                <p>Phone Number:</p>
+                            </address>
+                        </section>
+                        <section>
+                            <img src={'https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg'}/>
+                        </section>
+                        <section>
+                            <h2>Education</h2>
+                                <ul>
+                                    <li>San Diego State University</li>
+                                        <ul>
+                                            <li>B.S. Computer Science - 2018</li>
+                                            <li>SCUBA Diving Minor</li>
+                                            <li>Captain of Lacrosse Squad</li>
+                                        </ul>  
+                                </ul>
+                        </section>
+                        <section>
+                            <h2>Employment</h2>
+                                <ul>
+                                    <li>Facebook</li>
+                                        <ul>
+                                            <li>Principal Software Engineer 2018-2019</li>
+                                            <li>Designed and maintained IOS preformance</li>
+                                        </ul> 
+                                    <li>Apple</li>
+                                        <ul>
+                                            <li>Tech Guru 2019-2021</li>
+                                            <li>Dongle expert</li>
+                                        </ul>    
+                                </ul>
+
+                        </section>
+
+                        
+
+
+
+                    </main>
+                </div> 
+            );
+        };
+
+        
+
+
+
+
+
+
+    </script>
+
+    </body>
+</html>
